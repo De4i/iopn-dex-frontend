@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-header h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tab-navigation {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tab-navigation button {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-navigation button.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-connect {
+  display: flex;
+  align-items: center;
+}
+
+.connect-btn, .disconnect-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.disconnect-btn {
+  background: #6c757d;
+  margin-left: 10px;
+}
+
+.account {
+  color: white;
+  font-weight: bold;
+}
+
+.swap-interface, .liquidity-interface {
+  width: 100%;
+}
+
+.swap-interface h2, .liquidity-interface h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.token-input {
+  display: flex;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.token-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.token-input select {
+  border: none;
+  border-left: 2px solid #e9ecef;
+  padding: 12px;
+  background: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.balance {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.swap-arrow {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.swap-btn, .add-liquidity-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swap-btn:disabled, .add-liquidity-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.swap-btn:hover:not(:disabled), .add-liquidity-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.pool-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.pool-info h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.reserves p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.liquidity-inputs .input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.token-selectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.token-selectors select {
+  padding: 8px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  outline: none;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
