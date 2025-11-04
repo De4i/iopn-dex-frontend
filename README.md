@@ -25,7 +25,7 @@ Decentralized Exchange built on IOPN Testnet with React + Vite.
 - 📱 Responsive Design
 
 ## Live Demo
-https://myiopn-2aluuu93k-derianars-projects.vercel.app
+https://myiopn.vercel.app/
 
 ## Contract Addresses
 - **DEX**: 0xc1dAB94c9E2D37fFEC6799962E997651A420bfd9
